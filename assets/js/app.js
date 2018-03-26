@@ -44,7 +44,7 @@ fetch('https://opentdb.com/api.php?amount=10&category=15&difficulty=medium')
         if($(this).text() === data.results[counter].correct_answer  && counter !== 15){//verifico si la opcion es correcta
           $('.info').empty(); // vaciar div contenedor info
           $('.multiple_option').show(); // vuelvo a mostrar mi boton
-          $('.multiple_option').text('Next <br> Question'); // cambio contenido del boton
+          $('.multiple_option').text('Next'); // cambio contenido del boton
           $('.info').append(`<h4><i class="far fa-check-square"></i> Correct answer!</h4>`);
 
           //y aumento la informacion al array de respuestas correctas
@@ -54,7 +54,7 @@ fetch('https://opentdb.com/api.php?amount=10&category=15&difficulty=medium')
         if($(this).text() !== data.results[counter].correct_answer  && counter !== 15){
           $('.info').empty();
           $('.multiple_option').show();
-          $('.multiple_option').text('Next <br> Question');
+          $('.multiple_option').text('Next');
           $('.info').append(`<h4><i class="fas fa-times"></i> Wrong answer!</h4><h5><i class="far fa-check-square"></i> Correct Answer is:
           ${data.results[counter].correct_answer}</h5>`);
           
@@ -108,7 +108,7 @@ fetch('https://opentdb.com/api.php?amount=15&difficulty=hard&type=boolean')
         if($(this).text() === data.results[counter].correct_answer  && counter !== 15){
           $('.info').empty(); 
           $('.other_option').show(); 
-          $('.other_option').text('Next <br> Question'); 
+          $('.other_option').text('Next'); 
           $('.info').append(`<h4 class="correct"><i class="far fa-check-square"></i> Correct answer!</h4>`);
 
           correctAnswers ++; console.log(correctAnswers)
@@ -116,7 +116,7 @@ fetch('https://opentdb.com/api.php?amount=15&difficulty=hard&type=boolean')
         if($(this).text() !== data.results[counter].correct_answer  && counter !== 15){
           $('.info').empty();
           $('.other_option').show();
-          $('.other_option').text('Next <br> Question');
+          $('.other_option').text('Next');
           $('.info').append(`<h4 class="error"><i class="fas fa-times"></i> Wrong answer!</h4><h5 class="correct-answer"><i class="far fa-check-square"></i> Correct Answer is: 
           ${data.results[counter].correct_answer}</h5>`);
           
