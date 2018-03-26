@@ -4,7 +4,7 @@
 
 ![trivia preview](assets/img/trivia.png)
 
-# Enunciado problematica propuesta
+## Enunciado problematica propuesta
 
 Se nos pidio crear una wep-app que nos permitiera mostarrle al usuario una serie de preguntas para responder sacas a apartir de una api!
 
