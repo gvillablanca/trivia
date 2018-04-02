@@ -2,7 +2,7 @@
 
 ¿Aburrido? ¿Muchas paginas para responder trivias y ninguna con la tematica que te gusta?, para ello viene Quiz-trivia, una pagina donde podras realizar trivias con respuestas multiples o verdadero o falso, sobre videojuegos version movil.
 
-![trivia preview](assets/img/trivia.png)
+![trivia preview](https://raw.githubusercontent.com/gvillablanca/trivia/master/assets/img/trivia.png)
 
 ## Enunciado problematica propuesta
 
